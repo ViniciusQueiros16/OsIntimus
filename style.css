@@ -9,10 +9,7 @@
 
 body {
     font-size: 100%;
-    background: #16222A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: url(cv4-01.jpg);
 }
 
 .cabecalho {
@@ -21,6 +18,12 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+    width: 100%;
+    background-image: url(cv4-01.jpg);
+    position: fixed;
+    top: 0;
+    z-index: 99;  
+    
 }
   
 .cabecalho-imagem {
@@ -41,67 +44,56 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   
 
 .conteudo {
+    margin-top: 120px;
     margin-bottom: 48px;
-    border-top: 0.4px solid #FFF2E7;
 }
 
-.conteudo-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.conteudo-apresentaçao{
+.capa{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 32px;
+}
+
+.baner{
+    position: relative;
+}
+
+.icons{
+    position: absolute;
+    top: 850px;
+    margin-right: 800px;
+}
+
+.conteudo-imagem{
+    
+    width: 750px;
+    height: 750px;
+    margin: auto;
 }
 
 .conteudo-titulo1 {
     font-family: 'Playfair Display', serif;
-
     font-weight: 400;
-    font-size: 80px;
+    font-size: 60px;
     color: #FFF2E7;
 }
 
-.conteudo-subtitulo{
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 50px;
-    color: #FFF2E7;
-}
 
-.conteudo-botao{
-    background-color: #ECD6C4;
-    width: 180px;
-    height: 60px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-family: 'Sarala', sans-serif;
-    color: #2F2325;
-    font-weight: 400;
-    font-size: 24px;
-    
-}
-
-.conteudo-botao:hover{
-    background-color: rgba(236, 214, 196, 0.53);
-}
-
-.conteudo-imagem{
-    padding-top: 50px;
-    height: 500px;
-}
 
 .conteudo-secundario{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
     margin-top: 48px;
+}
+
+.sobre1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
 }
 
 .conteudo-secundario-titulo{
@@ -115,6 +107,7 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
 }
 
 .conteudo-secundario-paragrafo{
+    
     font-family: 'Sarala', sans-serif;
     color: #ECD6C4;
     font-weight: 300;
@@ -122,23 +115,27 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
 }
 
 .section-bibliografia{
+    margin-top: 48px;
+}
+
+.conteudo-bibliografia{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 24px;
-    margin-top: 48px;
 }
 
 .bibliografia-titulo{
     
-    font-family: 'Caladea', serif;
+    font-family: 'Playfair Display', serif;
+
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
     color: #FFF2E7;
 }
 .bibliografia-subtitulo{
     
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', cursive;
     font-weight: 400;
     font-size: 50px;
     color: #FFF2E7;
