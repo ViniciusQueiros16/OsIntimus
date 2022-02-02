@@ -78,6 +78,7 @@ body {
     font-weight: 400;
     font-size: 60px;
     color: #FFF2E7;
+    
 }
 
 
@@ -101,9 +102,19 @@ body {
     padding-top: 48px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 60px;
     color: #FFF2E7;
     margin-bottom: 16px;
+}
+
+.titulosDoSobre{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 34px;
+    color: #FFF2E7;
 }
 
 .conteudo-secundario-paragrafo{
